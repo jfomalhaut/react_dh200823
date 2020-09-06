@@ -1,0 +1,18 @@
+1. NPM 설치.
+- Node Package Manager
+
+2. Webpack
+- 모아주는 역할
+- html, css, js 파일 => bundle.js
+- local server 제공
+- loader를 사용해서 파일들을 읽어옴.
+
+3. babel
+- 최신문법 es5~6 arrow function 
+- 구문법으로 되돌려주는 역할
+- 오래되거나 버전이 낮은 브라우저용 크롬. 자동 업데이트
+
+4. 설치해야 할 것들
+- react
+- babel
+- webpack

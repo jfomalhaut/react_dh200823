@@ -1,7 +1,5 @@
 module.exports = {
-	entry: [
-		'./src/index.js'
-	],
+	entry: ['./src/index.js'],
 	module: {
 		rules: [
 			{
@@ -10,23 +8,32 @@ module.exports = {
 				use: {
 					loader: 'babel-loader',
 					options: {
-						presets: ['@babel/preset-env']
-					}
-				}
-			}
-		]
+						presets: ['@babel/preset-env'],
+					},
+				},
+			},
+			{
+				test: /\.(css|scss)$/,
+				exclude: /node_modules/,
+				use: [
+					'style-loader',
+					'css-loader',
+					'sass-loader'
+				]
+			},
+		],
 	},
 	resolve: {
-		extensions: ['*', '.js', '.jsx']
+		extensions: ['*', '.js', '.jsx'],
 	},
 	output: {
 		path: __dirname + '/dist',
 		publicPath: '/',
-		filename: 'bundle.js'
+		filename: 'bundle.js',
 	},
 	devServer: {
 		contentBase: './dist',
 		port: 3000,
-		historyApiFallback: true
-	}
-}
+		historyApiFallback: true,
+	},
+};

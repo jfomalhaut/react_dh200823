@@ -1,0 +1,19 @@
+Plugin들을 깔아준다.
+
+[최신문법 사용]
+	@babel/core
+	@babel/preset-env
+	@babel/preset-react
+	babel-loader
+[웹팩]
+	webpack
+	webpack-cli
+	webpack-dev-server
+[리엑트관련]
+	react
+	react-dom
+	react-router-dom (Navigation)
+
+npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+npm i -D webpack webpack-cli webpack-dev-server
+npm i -s react react-dom react-router-dom
