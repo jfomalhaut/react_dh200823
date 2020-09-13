@@ -1,0 +1,24 @@
+
+서버로부터 데이터를 받을 떄
+
+fetch => React Native 에서 많이 사용
+- 리엑트 네이티브의 잦은 업데이트로 인해
+- 조금 더 가볍다
+
+Axios => web
+- Axios가 더 다양한 기능이 있으므로
+
+
+순서
+
+1. Axios를 설치. npm i -s axios
+2. Axios를 통해 url을 get방식으로, 그리고 json으로 데이터를 받는다.
+2-1. 포함되는 것은 keyword, currentPage. countPerPage (10)
+3. 받은 데이터를 활용하여 리스트를 만든다.
+
+
+총 데이터가 77개.
+countPerPage = 10
+총 페이지 8개.
+
+current 1. 2

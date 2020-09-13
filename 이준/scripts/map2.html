@@ -1,0 +1,15 @@
+<html>
+<body>
+	<script>
+		// 화씨 = (섭씨x1.8) + 32,
+		// 섭씨 = (화씨-32)x0.55 입니다.
+
+		const data = [20, 22, 24, 21, 18, 19]; // 0시 ~ 6시까지의 섭씨 온도.
+		const fahrenheit = data.map(item => {
+			return item * 1.8 + 32 + "°F"
+		});
+
+		console.log(fahrenheit);
+	</script>
+</body>
+</html>
