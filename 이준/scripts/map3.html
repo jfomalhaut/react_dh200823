@@ -1,0 +1,14 @@
+<html>
+<body>
+	<script>
+		const values = [1, 2, 3, 4, 5, 6];
+		const newValue = values.map(item => item * 10);
+		const result = [];
+		const newValue2 = values.map(item => {
+			result.push(item * 10);
+			return item * 10;
+		});
+		console.log(result);
+	</script>
+</body>
+</html>

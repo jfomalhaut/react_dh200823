@@ -1,0 +1,29 @@
+<html>
+<body>
+	<img id="pet" src="">
+	<select id="pets" onchange="onChangeValue()">
+		<option value="dog">개</option>
+		<option value="cat">고양이</option>
+		<option value="horse">말</option>
+		<option value="pig">돼지</option>
+		<option value="cow">소</option>
+	</select>
+	<script>
+		var pets = document.querySelector('#pets');
+		var pet = document.querySelector('#pet');
+
+		function getImage(animal) {
+			switch(pets.value) {
+				case 'dog': return 'https://lh3.googleusercontent.com/proxy/B9vR-X5Vo7j-HsozXQvFjT-zJMUWlk3g1-cIJGt_-BZxlJe1w8cPws6IVVEUG8UKqAPqbkuYLzi6TkkMfy8TC64hH-dpxCUFLH_kBgQbngePgWMMhkMddYgAnS2SGd1V5_NAnFkuK_17f_EoefuIhPY-_xtrNAfhUqEdORLsHJ_IQ6gumCFXEBCdA1HX2DaegHEa2CzAyane2KEScrcp4Eut5jnVVWymlUh-LkKif4YQEuv9Ighr09u6Pn92xElPycqBk_FQ9syFcKLFYzXeEMGOlTlJUgQLEt8ELhkAhKWVN8EYBuBZkuS4X-LBqYyzZcTaYNuSh1dlt5Z6dQ5VGz2aUhio2uoLMMBwHpayQoQAMxl3eTBNPKwX1Jm8q6J95NL1dkrAPc6_TWkI';
+				case 'cat': return 'https://newsimg.hankookilbo.com/cms/articlerelease/2019/04/29/201904291390027161_3.jpg'
+			}
+		}
+
+		function onChangeValue() {
+			var url = getImage(pet.value);
+			pet.src = url;
+		}
+
+	</script>
+</body>
+</html>
